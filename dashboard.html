@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div id="main_container">
+        <div id="nav_container">
+            <div class="navigation">
+                <ul class="listWrap">
+                    <li class="list active">
+                        <a href="javascript:void(0);">
+                            <i class="icon">
+                                <ion-icon name="videocam-outline"></ion-icon>
+                            </i>
+                            <span class="text">Movies</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="javascript:void(0);">
+                            <i class="icon">
+                                <ion-icon name="tv-outline"></ion-icon>
+                            </i>
+                            <span class="text">New</span>
+                        </a>
+                    </li>
+                    <li class="list" id="last">
+                        <a href="javascript:void(0);">
+                            <i class="icon">
+                                <ion-icon name="server-outline"></ion-icon>
+                            </i>
+                            <span class="text">Shows</span>
+                        </a>
+                    </li>
+                    <li class="indicator"></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div id="content-box">
+                <div id="statistics">
+                    <h2>Admin Dashboard</h2>
+                    <h2>Statistics</h2>
+                    <div id="statContainer">
+                        <div class="statBox">
+                            <h2 id="movieNo">10</h2>
+                            <p>Movies</p>
+                        </div>
+                        <div class="statBox">
+                            <h2 id="upComingNo">10</h2>
+                            <p>Upcoming</p>
+                        </div>
+                        <div class="statBox">
+                            <h2 id="showNo">10</h2>
+                            <p>Shows</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="movies_content" class="invisible">
+                    <div class="template">
+                        <div class="movie_desc">
+                                <p>Movie</p>
+                        </div>
+                        <div class="collection_box">
+                            <p>Collection</p>
+                        </div>
+                        <div class="bookings_box">
+                            <p>Bookings</p>
+                        </div>
+                        <div>
+                            <ion-icon id="delete" name="trash-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="movie_box">
+                        <div class="movie_desc">
+                                <p class="movie_name">Name</p>
+                        </div>
+                        <div class="collection_box">
+                            <p class="collection">455</p>
+                        </div>
+                        <div class="bookings_box">
+                            <p class="bookings">56</p>
+                        </div>
+                        <div>
+                            <ion-icon class="delete-btn" name="trash-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="movie_box">
+                        <div class="movie_desc">
+                                <p class="movie_name">Name</p>
+                        </div>
+                        <div class="collection_box">
+                            <p class="collection">455</p>
+                        </div>
+                        <div class="bookings_box">
+                            <p class="bookings">56</p>
+                        </div>
+                        <div>
+                            <ion-icon class="delete-btn" name="trash-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="movie_box">
+                        <div class="movie_desc">
+                                <p class="movie_name">Name</p>
+                        </div>
+                        <div class="collection_box">
+                            <p class="collection">455</p>
+                        </div>
+                        <div class="bookings_box">
+                            <p class="bookings">56</p>
+                        </div>
+                        <div>
+                            <ion-icon class="delete-btn" name="trash-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="movie_box">
+                        <div class="movie_desc">
+                                <p class="movie_name">Name</p>
+                        </div>
+                        <div class="collection_box">
+                            <p class="collection">455</p>
+                        </div>
+                        <div class="bookings_box">
+                            <p class="bookings">56</p>
+                        </div>
+                        <div>
+                            <ion-icon class="delete-btn" name="trash-outline"></ion-icon>
+                        </div>
+                    </div>
+                    
+                    
+                   
+                </div>
+                <div id="upcoming_content" class="invisible">
+                    <div class="template">
+                        <div class="upcoming_desc">
+                                <p>Movie</p>
+                        </div>
+                        <div class="upcoming_genre">
+                            <p>Genre</p>
+                        </div>
+                        <div class="Wishlisted">
+                            <p>Wishlists</p>
+                        </div>
+                        <div>
+                            <ion-icon id="delete" name="trash-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="upcoming_box">
+                        <div class="upcoming_desc">
+                            <p>Name</p>
+                        </div>
+                        <div class="upcoming_genre">
+                            <p>Hackerrr</p>
+                        </div>
+                        <div class="Wishlisted">
+                            <p>69</p>
+                        </div>
+                        <div>
+                            <ion-icon class="delete-btn" name="trash-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div id="show_content" class="invisible">
+                    <div class="template">
+                        <div class="show_id">
+                                <p>Show ID</p>
+                        </div>
+                        <div class="upcoming_genre">
+                            <p>Genre</p>
+                        </div>
+                        <div class="Wishlisted">
+                            <p>Wishlists</p>
+                        </div>
+                        <div>
+                            <ion-icon id="delete" name="trash-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="upcoming_box">
+                        <div class="upcoming_desc">
+                            <p>Name</p>
+                        </div>
+                        <div class="upcoming_genre">
+                            <p>Hackerrr</p>
+                        </div>
+                        <div class="Wishlisted">
+                            <p>69</p>
+                        </div>
+                        <div>
+                            <ion-icon class="delete-btn" name="trash-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="addbox">
+                <div id="addMovie" class="inbisible">
+                    <h3>Add Movie</h3>
+                </div>
+                <div id="addUpcoming" class="inbisible">
+                    <h3>Add Upcoming Movie</h3>
+                </div>
+                <div id="addShows" class="inbisible">
+                    <h3>Add Shows</h3>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+        integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="dashboard.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

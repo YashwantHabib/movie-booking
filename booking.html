@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+  <div id="arrowContainer"><ion-icon name="arrow-back-outline" id="backIcn" onclick="history.back()"></ion-icon></div>
+    <div id="mainContainer">
+        <section id="section">
+            <div class="container">
+              <!-- leftCont -->
+              <div class="leftCont">
+                <div class="leftMainCont">
+                  <div class="legendContainer">
+                    <ul>
+                      <li>
+                        <div class="lens legend" ></div>
+                        <small>Available</small>
+                      </li>
+                      <li>
+                        <div class="lens legend selectedl" id="selectedL"></div>
+                        <small>Selected</small>
+                      </li>
+                      <li>
+                        <div class="lens legend occupiedl" id="occupiedL"></div>
+                        <small>Occupied</small>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- seat Container -->
+                  <div class="mainSeatCont">
+                      <div id="screen">
+                          <div id="par">
+                              <div id="out">
+                                <div id="in">
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                    <div class="seatCont" id="seatCont">
+                      <div class="seatRowCont1 seatRowCont">
+                        <div class="row">
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                        </div>
+                      </div>
+                      <div class="seatRowCont2 seatRowCont">
+                        <div class="row">
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                        </div>
+                      </div>
+                      <div class="seatRowCont3 seatRowCont">
+                        <div class="row">
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                          <div class="seat"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="dateNtime">
+                <div id="dates">
+                  
+                </div>
+                <div id="timings">
+                  
+                </div>
+                <button class="button-32" role="button">Check Availability</button>
+                <div id="posterContainer">
+                  <img src="https://www.movieposters.com/cdn/shop/products/54362_2_240x360_crop_center.progressive.png.jpg" alt="" id="poster">
+                </div>
+              </div>
+            </div> 
+          </section>
+          <section id="rightSection">
+            <div id="midContent">
+              <div id="movieContent">
+                <p id="name">Ford v/s Ferrari</p>
+                <span id="genre">Drama</span> - <span id="duration">135min</span>
+              </div>
+              
+              <div id="finalBooking">
+                <p id="total">69Rs</p>
+                  <button class="button-40" role="button">Confirm Purchase</button>
+                
+              </div>
+            </div>
+          
+          </section>
+          
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+        integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="booking.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

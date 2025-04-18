@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div id="main_container">
+        <div id="nav_container">
+            <div class="navigation">
+                <ul class="listWrap">
+                    <li class="list active">
+                        <a href="javascript:void(0);">
+                            <i class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </i>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li class="list" id="last">
+                        <a href="javascript:void(0);">
+                            <i class="icon">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </i>
+                            <span class="text">Profile</span>
+                        </a>
+                    </li>
+                    
+                    <li class="indicator"></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div id="home_content" class="invisible">
+                <h2>Now showing <ion-icon id="play_icn" name="play-outline"></ion-icon></h2>
+                <div class="now_playing">
+                    
+                 </div>
+                 <h2>Upcoming</h2>
+                <div class="upcoming">
+                    
+                </div>
+                 
+            </div>
+            <div id="ticket_content" class="invisible">
+                <h3 id="helloUser">Hello User</h3>
+                <h2>Your Tickets <ion-icon id="ticket_icn" name="ticket"></ion-icon></h2>
+
+
+                <div id="ticketContainer">
+
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+        integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="home.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

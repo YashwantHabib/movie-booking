@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	-webkit-tap-highlight-color: transparent;
+}
+
+:root {
+	--bg-default: #efefef;
+	--primary-white: #ffffff;
+	--primary-red: #ff3c41;
+}
+
+body {
+	min-height: 100vh;
+	width: 100%;
+	background: var(--bg-default);
+}
+#main_container{
+    display: flex;
+	width: 100%;
+    min-height: 100vh;
+}
+#nav_container{
+    position: fixed;
+    width: fit-content;
+    font-size: 1.4em;
+    padding: 5%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#last{
+	margin-bottom: 20px;
+}
+
+
+.navigation {
+	width: 75px;
+	height: fit-content;
+	background: var(--primary-white);
+	position: relative;
+	border-radius: 10px;
+	.listWrap {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		li {
+			width: 70px;
+			height: 70px;
+			position: relative;
+			z-index: 1;
+			a {
+				text-decoration: none;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: row;
+				text-align: center;
+				font-weight: 500;
+				width: 100%;
+				&:hover {
+					text-decoration: none;
+				}
+				.icon {
+					top: 15px;
+					position: relative;
+					display: block;
+					line-height: 75px;
+					text-align: center;
+					transition: 0.5s;
+					color: black;
+					ion-icon {
+						font-size: 2.2rem;
+					}
+				}
+				.text {
+					position: absolute;
+					color: black;
+					font-weight: 400;
+					letter-spacing: 0.05em;
+					transition: 0.5s;
+					transform: translateY(20px);
+					opacity: 0;
+					z-index: 1;
+				}
+			}
+			&:active, &.active {
+				a {
+					.icon {
+						color: var(--primary-white);
+						transform: translateX(60px);
+					}
+					.text {
+						opacity: 1;
+						transform: translateY(10px);
+					}
+				}
+			}
+			&.indicator {
+				position: absolute;
+				width: 70px;
+				height: 70px;
+				top: 5%;
+				left: 80%;
+				border-radius: 50%;
+				border: 6px solid var(--bg-default);
+				background: var(--primary-red);
+				transition: 0.3s;
+				z-index: 0;
+				&:before, &:after {
+					content: '';
+					position: absolute;
+					top: 50%;
+					width: 20px;
+					height: 20px;
+					background: blue;
+					background: transparent;
+				}
+				
+			 
+			}
+			&:nth-child(1).active ~ .indicator {
+				transform: translateY(calc(70px * 0-(5px)));
+			}
+			&:nth-child(2).active ~ .indicator {
+				transform: translateY(calc(70px * 1 - (1px)));
+			}
+		}
+	}
+}
+
+#content{
+    font-size: 2em;
+    margin-top: 3%;
+    margin-left: 15%;
+	width: 100%;
+}
+
+.poster_banner{
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.6em;
+	width: fit-content;
+	margin-right: 1%;
+
+}
+
+.poster{
+	border-radius: 0.3em;
+	width:175px;
+	height: 259.26px;
+}
+
+.title{
+	margin-top: 10px;
+	font-size: 0.6em;
+	font-weight: 800;
+}
+
+.invisible{
+	display: none;
+}
+.visible{
+	display: block;
+}
+
+
+
+
+
+.now_playing , .upcoming{
+	padding: 3%;
+	display: flex;
+	justify-content: left;
+}
+
+.cntr {
+	vertical-align: middle;
+	margin-right: 5px;
+  }
+
+#play_icn{
+	vertical-align: middle;
+	font-size: 1.5em;
+	color: var(--primary-red);
+}
+#ticket_icn{
+	vertical-align: middle;
+	font-size: 1.5em;
+	color: var(--primary-red);
+}
+
+#ticketContainer{
+	display: flex;
+	width: 100%;
+	padding-top: 3%;
+	overflow-x: scroll;
+}
+
+.cirCont{
+	display: flex;
+	justify-content: center;
+	
+}
+.cir{
+	width: 40px;
+	height: 30px;
+	background-color: var(--bg-default);
+	border-radius:  0% 0% 50% 50%;
+}
+.ticket{
+	background-color: var(--primary-white);
+	width: fit-content;
+	border-radius: 1em;
+	height: fit-content;
+	margin: 3%;
+}
+.barcode{
+	width: 250px;
+}
+.movieName{
+	font-weight: 700;
+	font-size: 1.2em;
+}
+.ticketTxt{
+	font-size: 0.7em;
+	padding: 0 7%;
+	border-bottom: 2px dashed black;
+	margin-bottom: 5px;
+}
+
+.poster{
+	object-fit: cover;
+	width:  100%;
+}
