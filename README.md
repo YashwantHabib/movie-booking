@@ -4,6 +4,30 @@ A full-stack movie booking web application that allows users to browse movies, v
 
 ---
 
+### 🏠 Home Page
+
+The homepage displays a list of available movies with posters, titles, and a search bar.
+
+![Home Page](./screenshots/movie-home.png)
+
+---
+
+### 🎬 Movie Ticket Details
+
+User booked Tickets with deatils.
+
+![Movie Details](./screenshots/movie-tickets.png)
+
+---
+
+### 🗓️ Booking Screen
+
+Users can select a showtime, choose seats, and confirm their ticket booking.
+
+![Booking](./screenshots/movie-booking.png)
+
+---
+
 ## 🚀 Features
 
 - 🔍 Browse and search movies
@@ -27,29 +51,3 @@ A full-stack movie booking web application that allows users to browse movies, v
 Visual walkthrough of the **Movie Booking Website**.
 
 ---
-
-### 🏠 Home Page
-
-The homepage displays a list of available movies with posters, titles, and a search bar.
-
-![Home Page](./screenshots/movie-home.png)
-
----
-
-### 🎬 Movie Details
-
-User booked Tickets with deatils.
-
-![Movie Details](./screenshots/movie-tickets.png)
-
----
-
-### 🗓️ Booking Screen
-
-Users can select a showtime, choose seats, and confirm their ticket booking.
-
-![Booking](./screenshots/movie-booking.png)
-
----
-
-> 📁 All images are stored in the `/screenshots` folder.
